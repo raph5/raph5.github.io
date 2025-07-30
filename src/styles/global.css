@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --bg1: #ffffff;
+  --fg1: #000000;
+}
+
+html {
+  background: var(--bg1);
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 32px;
+  min-height: 100vh;
+  max-width: 600px;
+  font-family: 'Noto Serif', serif;
+  overflow-y: scroll;
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  margin-bottom: 32px;
+}
+.header__title {
+  padding: 16px 0;
+  color: var(--fg1);
+  text-decoration: none;
+  margin-right: auto;
+}
+.header__title h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+.footer {
+  margin-top: 23px;
+  height: 32px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 16px;
+}
+.nav ul, .nav li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav__link {
+  padding: 16px 0;
+}
+.nav__link:hover {
+  transform-origin: 0 calc(100%);
+  transform: skew(-10deg);
+}
+.nav__link a {
+  color: var(--fg1);
+  font-family: 'Noto Serif', serif;
+  font-weight: 800;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.main p, .main a, .main li, .main code, .main b, .main i {
+  font-size: 14px;
+  color: var(--fg1);
+}
+.main img {
+  width: 100%;
+}
+.main code {
+  font-family: 'Noto Sans Mono';
+}
+.main li {
+  list-style: none;
+  position: relative;
+}
+.main li::before {
+  content: "✦ ";
+  font-size: 10px;
+  display: inline-block;
+  position: absolute;
+  left: -14px;
+  top: 3px;
+}
+.main ul {
+  padding-left: 20px;
+}
+.main a {
+  display: inline-block;
+}
+.main a:hover {
+  transform-origin: 0 calc(100%);
+  transform: skew(-10deg);
+}
+@media (max-width: 700px) {
+  .main h1 {
+    font-size: 24px;
+  }
+  .main h2 {
+    font-size: 18px;
+  }
+}

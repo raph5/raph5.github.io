@@ -1,0 +1,28 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+---
+
+<html lang="en">
+	<head>
+    <BaseHead />
+    <title>Raphaël Guayder</title>
+    <meta name="title" content="Raphaël Guyader" />
+    <meta name="description" content="Raphaël Guyader's personal website" />
+  </head>
+	<body>
+    <header class="header">
+      <a class="header__title" href="/"><h1>Raphael Guyader</h1></a>
+      <nav class="nav">
+        <ul>
+          <li class="nav__link"><a href="mailto:raphguyader@gmail.com">mail</a></li>
+          <li class="nav__link"><a href="https://github.com/raph5" target="blank">github</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <slot />
+    </main>
+    <footer class="footer">
+    </footer>
+	</body>
+</html>
