@@ -1,5 +1,7 @@
 ---
 layout: ../../layouts/BaseLayout.astro
+title: "Reverse vs. Vectorized Forward AD: A Performance Exploration in C"
+description: "Performance comparison of reverse mode and vectorized forward mode automatic differentiation in C++. Includes benchmarks on polynomial fitting, cache-aware optimizations, and implementation details."
 ---
 
 # Reverse vs. Vectorized Forward AD: A Performance Exploration in C

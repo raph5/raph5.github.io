@@ -1,13 +1,16 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
+const {frontmatter} = Astro.props;
+const title = frontmatter.title ?? "Raphael Guyader"
+const description = frontmatter.description ?? "Raphael Guyader's personal website"
 ---
 
 <html lang="en">
 	<head>
     <BaseHead />
-    <title>Raphaël Guayder</title>
-    <meta name="title" content="Raphaël Guyader" />
-    <meta name="description" content="Raphaël Guyader's personal website" />
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
   </head>
 	<body>
     <header class="header">
