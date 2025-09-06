@@ -11,7 +11,7 @@ html {
 
 body {
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 16px;
   min-height: 100vh;
   max-width: 600px;
   font-family: 'Noto Serif', serif;
