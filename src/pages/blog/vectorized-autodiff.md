@@ -52,7 +52,7 @@ the `clock()` function from `time.h`.
 
 ## Initial Results
 
-![results of the first benchmark](/images/chart_1.png)
+![results of the first benchmark](/images/chart_1.svg)
 
 Performance was measured as a function of gradient size (i.e., the degree of
 the polynomial):
@@ -77,14 +77,14 @@ the primal work.
 
 I tested various α values (chart below) and found a sweet spot around 64.
 
-![results of the second benchmark](/images/chart_2.png)
+![results of the second benchmark](/images/chart_2.svg)
 
 
 ## Updated Performance
 
 Here are the performances of the chunked forward AD (in green) for α = 64
 
-![results of the second benchmark](/images/chart_3.png)
+![results of the second benchmark](/images/chart_3.svg)
 
 As you can see the chunked version performs way better. Though 2× slower than
 reverse AD for gradients of size 500, forward AD is now viable choice for this
