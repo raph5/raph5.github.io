@@ -17,6 +17,10 @@ body {
   font-family: 'Noto Serif', serif;
   overflow-y: scroll;
 }
+body::selection {
+  background: var(--fg1);
+  color: var(--bg1);
+}
 
 .header {
   display: flex;
