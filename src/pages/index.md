@@ -34,4 +34,4 @@ A react library (30 weekly downloads)
 
 *The Buran space shuttle landing autonomously on its first flight*
 
-![Buran Landing](https://buranarchive.space/_datas/9/m/h/9mhfyeon1r/i/uploads/9/m/h/9mhfyeon1r//2024/09/08/20240908120153-bc594d11-me.jpg)
+![Buran Landing](/images/buran.jpg)
