@@ -48,7 +48,6 @@ body::selection {
 
 .nav ul {
   display: flex;
-  gap: 16px;
 }
 .nav ul, .nav li {
   margin: 0;
@@ -56,17 +55,20 @@ body::selection {
   list-style: none;
 }
 .nav__link {
-  padding: 16px 0;
 }
 .nav__link:hover {
-  transform-origin: 0 calc(100% - 4px);
-  transform: scaleY(120%);
+  /* transform-origin: 0 calc(100% - 4px); */
+  /* transform: scaleY(120%); */
 }
 .nav__link a {
+  padding: 8px 8px;
   color: var(--fg1);
   font-family: 'Oswald', sans-serif;
   font-weight: 800;
-  font-size: 16px;
+  font-size: 18px;
+  text-decoration: none;
+}
+.nav__link:hover a {
   text-decoration: underline;
 }
 
